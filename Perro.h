@@ -52,5 +52,7 @@ public:
     void setTamanio(std::string tamanio);
     std::string getColor();
     void setColor(std::string color);
+    void agregarRaza(Raza*);
+    Raza* getRRaza();
 };
 #endif

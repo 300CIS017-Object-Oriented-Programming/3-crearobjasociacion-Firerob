@@ -6,10 +6,6 @@ Raza::Raza(string nom, string pais){
     paisOrigen = pais;
 }   
 
-void Raza::agregarRaza(Perro* perro){
-    pPerro = perro;
-}
-
 string Raza::getNombre(){
     return nombre;
 }
@@ -22,6 +18,4 @@ void Raza::setNombre(string nom){
 void Raza::setPaisOrigen(string pais){
     paisOrigen = pais;
 }
-void Raza::mostrarInfo(){
-    cout << "Perro: " << pPerro->getNombre() <<", raza: " << nombre << ", pais Origen: " << paisOrigen << endl;
-}
+

@@ -92,5 +92,13 @@ Perro::~Perro() {
 }
 
 
+void Perro::agregarRaza(Raza* raza){
+    rRaza = raza;
+}
+
+Raza* Perro::getRRaza(){
+    return rRaza;
+}
+
 
 

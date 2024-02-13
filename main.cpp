@@ -30,7 +30,8 @@ int main() {
     felipe->mostrarInfo();
 
     /*adicional - familiaridad con las relaciones*/
-    
+
+
     wachiwa->agregarPropietario(felipe->getNombre(), felipe->getId());
     
     std::cout<< "El documento de id del pPropietario del perro "<<wachiwa->getNombre() << " es " << wachiwa->getPropietario()->getId() << std::endl;
@@ -46,8 +47,10 @@ int main() {
     /*Relación de asociación - asociar objetos desde la clase creadora*/
     Raza* mastin = new Raza("Mastin Napolitano", "italia");
     Raza* maltes = new Raza("Maltes", "italia");
-    mastin->agregarRaza(wachiwa);
-    mastin->mostrarInfo();
+    wachiwa ->agregarRaza(mastin);
+    cout << "Perro: " << wachiwa->getNombre() <<", raza: " << wachiwa->getRaza() << ", pais Origen: " << wachiwa->getRRaza()->getPaisOrigen() << endl;
+
+    
     
     return 0;
 }
